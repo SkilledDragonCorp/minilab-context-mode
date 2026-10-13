@@ -1,0 +1,32 @@
+{
+  "name": "@skilleddragon/minilab-context-mode",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SkilledDragon minilab: measure context-mode MCP context savings with reproducible fixtures",
+  "engines": {
+    "node": ">=24.11.0",
+    "bun": ">=1.2.0"
+  },
+  "bin": {
+    "context-bench": "./src/cli.ts"
+  },
+  "scripts": {
+    "bench": "bun run src/bench.ts",
+    "test": "bun test",
+    "test:e2e": "bun test tests/e2e",
+    "check:skills": "bun run scripts/check-skills-frontmatter.ts",
+    "audit": "bun audit",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "context-mode": "1.0.169",
+    "js-tiktoken": "1.0.21"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.3"
+  },
+  "contextModePinnedVersion": "1.0.169"
+}

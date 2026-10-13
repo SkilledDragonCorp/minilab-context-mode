@@ -1,0 +1,4 @@
+context-mode@1.0.169
+
+Recorded: npm exact dependency in package.json ("context-mode": "1.0.169").
+Spawn: node node_modules/context-mode/cli.bundle.mjs (stdio MCP).
